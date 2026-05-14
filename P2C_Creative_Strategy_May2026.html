@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2C Creative Strategy — One Mission, Many Expressions</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2305A9C7'/><rect x='18' y='42' width='30' height='8' rx='2' fill='white'/><rect x='26' y='22' width='8' height='42' rx='2' fill='white'/><path d='M48 22 C48 22 68 22 68 38 C68 54 48 54 48 54 L48 70' stroke='white' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M74 26 C74 26 88 24 88 34 C88 43 74 47 73 55 L89 55' stroke='white' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --p2c-primary:    #05A9C7;
+    --p2c-primary-mid:#05C3DE;
+    --p2c-primary-dk: #007FA3;
+    --p2c-secondary:  #008EAA;
+    --p2c-orange:     #F19C49;
+    --p2c-red:        #E03E52;
+    --p2c-green:      #00C389;
+    --p2c-ink:        #302E2C;
+    --p2c-gray:       #75787B;
+    --p2c-gray-lt:    #A2AAAD;
+    --p2c-gray-xlt:   #DDE5ED;
+    --p2c-cream:      #F7F9FB;
+    --font-head: 'Montserrat', sans-serif;
+    --font-body: 'Source Serif 4', Georgia, serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { font-size: 16px; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--p2c-ink);
+    background: #fff;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── PAGE WRAPPER ── */
+  .page { max-width: 860px; margin: 0 auto; padding: 0 2rem 6rem; }
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--p2c-primary-dk);
+    color: #fff;
+    padding: 5rem 3rem 4rem;
+    margin: 0 -2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 340px; height: 340px;
+    border-radius: 50%;
+    border: 80px solid rgba(5,195,222,0.18);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 40px solid rgba(241,156,73,0.22);
+  }
+  .cover-eyebrow {
+    font-family: var(--font-head);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--p2c-primary-mid);
+    margin-bottom: 1.5rem;
+  }
+  .cover h1 {
+    font-family: var(--font-head);
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  .cover h1 span { color: var(--p2c-orange); }
+  .cover-sub {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .cover-meta {
+    font-family: var(--font-head);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.55);
+  }
+
+  /* ── SECTION NUMBERS ── */
+  .section-num {
+    font-family: var(--font-head);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--p2c-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  /* ── HEADINGS ── */
+  h2.section-title {
+    font-family: var(--font-head);
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--p2c-primary-dk);
+    line-height: 1.15;
+    margin-bottom: 0.25rem;
+  }
+  h3 {
+    font-family: var(--font-head);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--p2c-ink);
+    margin: 2rem 0 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  h4 {
+    font-family: var(--font-head);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--p2c-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 1.5rem 0 0.4rem;
+  }
+
+  /* ── BODY COPY ── */
+  p { margin-bottom: 1rem; font-size: 1rem; }
+  p + p { margin-top: -0.25rem; }
+
+  /* ── SECTION DIVIDER ── */
+  .section {
+    border-top: 1px solid var(--p2c-gray-xlt);
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  .section:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+  /* ── TAGLINE BLOCK ── */
+  .tagline-block {
+    border-left: 4px solid var(--p2c-orange);
+    padding: 0.6rem 1.25rem;
+    margin: 1.5rem 0;
+    background: #fff8f0;
+  }
+  .tagline-block p {
+    font-family: var(--font-head);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--p2c-ink);
+    font-style: italic;
+    margin: 0;
+  }
+
+  /* ── CALLOUT BOX ── */
+  .callout {
+    background: var(--p2c-cream);
+    border-left: 4px solid var(--p2c-primary);
+    padding: 1.25rem 1.5rem;
+    margin: 1.75rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p { margin: 0; font-size: 0.95rem; color: var(--p2c-ink); }
+  .callout strong { color: var(--p2c-primary-dk); }
+
+  /* ── ONE-WORD FEATURE ── */
+  .feature-word {
+    font-family: var(--font-head);
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 800;
+    color: var(--p2c-primary);
+    line-height: 1;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  /* ── ONE SENTENCE BLOCK ── */
+  .one-sentence {
+    background: var(--p2c-primary-dk);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+  .one-sentence p {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.65;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  /* ── ONE PARAGRAPH BLOCK ── */
+  .one-para {
+    border: 1px solid var(--p2c-gray-xlt);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    background: #fff;
+  }
+  .one-para p {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+    color: var(--p2c-ink);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ── MISSION GRID (1/9/1) ── */
+  .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+    background: var(--p2c-gray-xlt);
+    border: 1px solid var(--p2c-gray-xlt);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+  }
+  .mission-cell {
+    background: #fff;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+  }
+  .mission-cell:first-child { background: var(--p2c-primary-dk); color: #fff; }
+  .mission-cell:last-child  { background: var(--p2c-primary); color: #fff; }
+  .mission-cell:nth-child(2){ background: var(--p2c-cream); }
+  .mission-num {
+    font-family: var(--font-head);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .mission-cell:first-child .mission-num { color: #fff; }
+  .mission-cell:last-child  .mission-num { color: #fff; }
+  .mission-cell:nth-child(2) .mission-num { color: var(--p2c-primary); }
+  .mission-label {
+    font-family: var(--font-head);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    display: block;
+    margin-bottom: 0.5rem;
+    opacity: 0.75;
+  }
+  .mission-desc {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .mission-cell:first-child .mission-desc,
+  .mission-cell:last-child  .mission-desc { color: rgba(255,255,255,0.85); }
+  .mission-cell:nth-child(2) .mission-desc { color: var(--p2c-ink); }
+
+  /* ── LAYER STACK ── */
+  .layer-stack { margin: 1.5rem 0; }
+  .layer {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--p2c-gray-xlt);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+  }
+  .layer-num {
+    background: var(--p2c-primary);
+    color: #fff;
+    font-family: var(--font-head);
+    font-size: 0.75rem;
+    font-weight: 800;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .layer:nth-child(1) .layer-num { background: var(--p2c-orange); }
+  .layer:nth-child(2) .layer-num { background: var(--p2c-primary-dk); }
+  .layer:nth-child(3) .layer-num { background: var(--p2c-primary); }
+  .layer:nth-child(4) .layer-num { background: var(--p2c-secondary); }
+  .layer-content { padding: 1rem 1.25rem; flex: 1; background: #fff; }
+  .layer-title {
+    font-family: var(--font-head);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--p2c-gray);
+    margin-bottom: 0.25rem;
+  }
+  .layer-body {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    margin: 0;
+    color: var(--p2c-ink);
+    font-style: italic;
+  }
+
+  /* ── TRANSLATION TABLE ── */
+  .translation-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9rem; }
+  .translation-table th {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: var(--p2c-gray-xlt);
+    color: var(--p2c-gray);
+  }
+  .translation-table th:first-child { border-radius: 6px 0 0 0; }
+  .translation-table th:last-child  { border-radius: 0 6px 0 0; }
+  .translation-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--p2c-gray-xlt);
+    vertical-align: top;
+    font-family: var(--font-body);
+    color: var(--p2c-ink);
+    line-height: 1.55;
+  }
+  .translation-table tr:last-child td { border-bottom: none; }
+  .translation-table td:first-child { color: var(--p2c-gray); font-style: italic; }
+  .translation-table td:last-child  { color: var(--p2c-ink); font-weight: 400; }
+
+  /* ── VOICE TABLE ── */
+  .voice-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9rem; }
+  .voice-table th {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: var(--p2c-primary-dk);
+    color: rgba(255,255,255,0.7);
+  }
+  .voice-table th:first-child { color: #fff; width: 14%; border-radius: 6px 0 0 0; }
+  .voice-table th:last-child  { border-radius: 0 6px 0 0; }
+  .voice-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--p2c-gray-xlt);
+    vertical-align: top;
+    font-family: var(--font-body);
+    color: var(--p2c-ink);
+    line-height: 1.55;
+  }
+  .voice-table tr:last-child td { border-bottom: none; }
+  .voice-table td:first-child {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--p2c-primary-dk);
+  }
+  .voice-table td:nth-child(3) { color: var(--p2c-gray-lt); font-style: italic; }
+
+  /* ── BEFORE/AFTER ── */
+  .ba-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+  .ba-col { border-radius: 8px; overflow: hidden; }
+  .ba-head {
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 0.4rem 0.85rem;
+  }
+  .ba-off .ba-head { background: #fde8eb; color: var(--p2c-red); }
+  .ba-on  .ba-head { background: #e0f8f2; color: #007a58; }
+  .ba-body {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    padding: 0.85rem;
+    border: 1px solid var(--p2c-gray-xlt);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    color: var(--p2c-ink);
+  }
+  .ba-off .ba-body { background: #fffbfc; }
+  .ba-on  .ba-body { background: #fbfffe; }
+
+  /* ── NAMING LOCKUP ── */
+  .lockup-box {
+    background: var(--p2c-cream);
+    border: 1.5px dashed var(--p2c-primary);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+  }
+  .lockup-box .lockup-rule {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--p2c-primary);
+    margin-bottom: 0.5rem;
+  }
+  .lockup-box .lockup-pattern {
+    font-family: var(--font-head);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--p2c-ink);
+    margin-bottom: 0.5rem;
+  }
+  .lockup-box .lockup-examples {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    color: var(--p2c-gray);
+    font-style: italic;
+  }
+
+  /* ── COLOUR SWATCHES ── */
+  .swatch-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0; }
+  .swatch {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid var(--p2c-gray-xlt);
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem 0.4rem 0.5rem;
+    background: #fff;
+  }
+  .swatch-dot { width: 20px; height: 20px; border-radius: 4px; flex-shrink: 0; }
+  .swatch-info { font-family: var(--font-head); font-size: 0.72rem; }
+  .swatch-name { font-weight: 700; color: var(--p2c-ink); display: block; }
+  .swatch-hex  { color: var(--p2c-gray); }
+
+  /* ── PHASE CARDS ── */
+  .phase-list { display: flex; flex-direction: column; gap: 0.75rem; margin: 1.25rem 0; }
+  .phase-card { display: flex; gap: 1rem; align-items: flex-start; }
+  .phase-num {
+    background: var(--p2c-primary);
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 0.85rem;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .phase-card:nth-child(2) .phase-num { background: var(--p2c-secondary); }
+  .phase-card:nth-child(3) .phase-num { background: var(--p2c-primary-dk); }
+  .phase-body { flex: 1; }
+  .phase-title {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--p2c-ink);
+    margin-bottom: 0.3rem;
+  }
+  .phase-time {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--p2c-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+  .phase-items { list-style: none; padding: 0; }
+  .phase-items li {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--p2c-ink);
+    padding: 0.2rem 0 0.2rem 1rem;
+    position: relative;
+    line-height: 1.55;
+  }
+  .phase-items li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--p2c-primary);
+    font-weight: 600;
+  }
+
+  /* ── HARD TRUTHS ── */
+  .truth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0; }
+  .truth-card {
+    border-radius: 8px;
+    padding: 1.25rem;
+    border: 1px solid var(--p2c-gray-xlt);
+  }
+  .truth-label {
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  .truth-under .truth-label { color: var(--p2c-primary); }
+  .truth-avoid .truth-label { color: var(--p2c-red); }
+  .truth-under { background: #f2fbfd; }
+  .truth-avoid { background: #fff5f6; }
+  .truth-card ul { padding-left: 1.1rem; }
+  .truth-card ul li {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 0.4rem;
+    color: var(--p2c-ink);
+  }
+
+  /* ── QUICK REF CARD ── */
+  .qr-card {
+    background: var(--p2c-primary-dk);
+    color: #fff;
+    border-radius: 12px;
+    padding: 2.5rem 2.5rem 2rem;
+    margin: 3rem 0 0;
+  }
+  .qr-card-title {
+    font-family: var(--font-head);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--p2c-primary-mid);
+    margin-bottom: 2rem;
+  }
+  .qr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .qr-item {}
+  .qr-item-label {
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 0.35rem;
+  }
+  .qr-item-value {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  .qr-item-value.big {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--p2c-orange);
+  }
+  .qr-tagline {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    font-family: var(--font-head);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .qr-tagline strong {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-top: 0.25rem;
+  }
+
+  /* ── TRANSLATION SHORTFORM ── */
+  .trans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.25rem 0; }
+  .trans-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--p2c-gray-xlt);
+  }
+  .trans-card-head {
+    font-family: var(--font-head);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.4rem 0.85rem;
+    background: var(--p2c-primary);
+    color: #fff;
+  }
+  .trans-card:nth-child(2) .trans-card-head { background: var(--p2c-secondary); }
+  .trans-card:nth-child(3) .trans-card-head { background: var(--p2c-primary-dk); }
+  .trans-card-body {
+    padding: 0.85rem;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: var(--p2c-ink);
+    background: #fff;
+  }
+
+  /* ── ARRIVAL LIST ── */
+  .arrival-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+  .arrival-list li {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--p2c-gray-xlt);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--p2c-ink);
+  }
+  .arrival-list li::before {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--p2c-primary);
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+  .arrival-list li:last-child { border-bottom: none; }
+  .arrival-list li strong {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--p2c-ink);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--p2c-gray-xlt);
+    text-align: center;
+  }
+  .footer p {
+    font-family: var(--font-head);
+    font-size: 0.78rem;
+    color: var(--p2c-gray);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin: 0.25rem 0;
+  }
+  .footer .footer-tagline {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--p2c-primary-dk);
+    font-weight: 400;
+    margin-top: 0.5rem;
+    letter-spacing: 0;
+  }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote {
+    border-top: 3px solid var(--p2c-orange);
+    border-bottom: 3px solid var(--p2c-orange);
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+    text-align: center;
+  }
+  .pull-quote p {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--p2c-primary-dk);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  /* ── INLINE TOC ── */
+  .toc-section {
+    border-top: 1px solid var(--p2c-gray-xlt);
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .toc-list li {
+    border-bottom: 1px solid var(--p2c-gray-xlt);
+  }
+  .toc-list li:nth-last-child(-n+2) { border-bottom: none; }
+  .toc-list a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem 1rem 1rem 0;
+    text-decoration: none;
+    transition: opacity 0.12s ease;
+  }
+  .toc-list a:hover { opacity: 0.75; }
+  .toc-entry-num {
+    font-family: var(--font-head);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--p2c-primary);
+  }
+  .toc-entry-title {
+    font-family: var(--font-head);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--p2c-primary-dk);
+    line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- COVER -->
+  <div class="cover" id="cover">
+    <p class="cover-eyebrow">Power to Change · Creative Services</p>
+    <h1>One Mission,<br><span>Many Expressions.</span></h1>
+    <p class="cover-sub">A creative strategy for who we are, how we sound, and how we show up — together.</p>
+    <p class="cover-meta">Draft for review and revision &nbsp;·&nbsp; May 2026</p>
+    <p class="cover-meta" style="margin-top: 0.35rem;">Prepared by Gaetanne Hetherington &nbsp;·&nbsp; <span>gaetanne.hetherington@p2c.com</span></p>
+  </div>
+
+  <!-- A NOTE -->
+  <div class="section" id="s00">
+    <span class="section-num">A note before we begin</span>
+    <h2 class="section-title">This is a draft, an offering, a place to push from.</h2>
+    <p>Power to Change has 50+ years of grassroots fruit, a clear mission, and a faithful team. Nothing in this document changes that. What follows is an attempt to give that fruit a clearer voice — one that sounds like us, that a pastor in Halifax and a student in Vancouver can both repeat without translating, and that holds together across nine ministries without flattening any of them.</p>
+    <p>This creative services strategy aims to use a voice it recommends: a voice humble enough to admit where things break, convicted enough to say what we believe, warm enough to be human, plain enough to be remembered. The strategy is worth pursuing only if we are willing to be changed by it.</p>
+    <p>If something here is wrong, we want to find out. If something here is right, we want to make it real.</p>
+    <div class="tagline-block"><p><em>"Until all know Jesus."</em> — Power to Change</p></div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc-section" id="toc">
+    <span class="section-num">Contents</span>
+    <h2 class="section-title">What's inside.</h2>
+    <ul class="toc-list">
+      <li><a href="#s01"><span class="toc-entry-num">01 / The Diagnosis</span><span class="toc-entry-title">Where clarity breaks.</span></a></li>
+      <li><a href="#s02"><span class="toc-entry-num">02 / The Strategic Idea</span><span class="toc-entry-title">One mission, many expressions.</span></a></li>
+      <li><a href="#s03"><span class="toc-entry-num">03 / Identity</span><span class="toc-entry-title">Who and what is Power to Change?</span></a></li>
+      <li><a href="#s04"><span class="toc-entry-num">04 / Messaging Architecture</span><span class="toc-entry-title">The words, in order.</span></a></li>
+      <li><a href="#s05"><span class="toc-entry-num">05 / Voice and Tone</span><span class="toc-entry-title">Humble and convicted.</span></a></li>
+      <li><a href="#s06"><span class="toc-entry-num">06 / Ministry Relationship</span><span class="toc-entry-title">How nine become one — and stay nine.</span></a></li>
+      <li><a href="#s07"><span class="toc-entry-num">07 / Visual Identity</span><span class="toc-entry-title">Ministries are unique, yet belong.</span></a></li>
+      <li><a href="#s08"><span class="toc-entry-num">08 / Website Direction</span><span class="toc-entry-title">p2c.com — what to say first.</span></a></li>
+      <li><a href="#s09"><span class="toc-entry-num">09 / Translating the Big Ideas</span><span class="toc-entry-title">Hub of Evangelism, simply understood.</span></a></li>
+      <li><a href="#s10"><span class="toc-entry-num">10 / Hard Truths</span><span class="toc-entry-title">Honest places to embrace and review.</span></a></li>
+      <li><a href="#s11"><span class="toc-entry-num">11 / If We Got There</span><span class="toc-entry-title">What would be true about us.</span></a></li>
+      <li><a href="#s12"><span class="toc-entry-num">12 / Implementation</span><span class="toc-entry-title">Three phases, no heroics.</span></a></li>
+      <li><a href="#qr"><span class="toc-entry-num">Appendix</span><span class="toc-entry-title">Quick Reference Card</span></a></li>
+    </ul>
+  </div>
+  <!-- 01 DIAGNOSIS -->
+  <div class="section" id="s01">
+    <span class="section-num">01 / The Diagnosis</span>
+    <h2 class="section-title">Where clarity breaks.</h2>
+    <p>Power to Change is not a brand problem in search of a brand solution. It is a clarity problem. The mission is clear. The fruit is real. What slips, when we say who we are, is the relationship between the whole and the parts — and the words we use to describe it.</p>
+    <p>Four breaks recur. None of them are fatal. All of them are fixable.</p>
+
+    <h3>Break 1 — The umbrella metaphor</h3>
+    <p>"Umbrella" is the word that gets reached for when staff or partners describe how P2C and its ministries fit together. It is a passive word. An umbrella shelters things that exist independently. It implies that Athletes in Action, FamilyLife Canada, DRIME, and the rest are separate entities that happen to share a roof. That is not what is true. P2C and its ministries are one mission expressed in different rooms — not nine organizations standing under one cover.</p>
+
+    <h3>Break 2 — Internal language used externally</h3>
+    <p>"Hub of Evangelism." "10,000 Communities on Mission." "The four C's." "20-mile march." These are excellent internal frames for staff and the board. They are not the right shape for a churchgoer in Saskatoon or a 22-year-old who has just decided to follow Jesus. Right now, our internal language and our external language are the same language. The strategy is not to abandon the internal frames — it is to translate them, deliberately, into language a stranger could use.</p>
+
+    <h3>Break 3 — Visual disconnection across ministries</h3>
+    <p>Each P2C ministry has its own logo, palette, and visual personality. The break is that nothing in the visual system signals that they belong to one another. A donor looking at FamilyLife Canada and Athletes in Action side by side has no visual reason to believe they are part of the same mission. The connective tissue is in our org chart, not on the page.</p>
+
+    <h3>Break 4 — A name that is two names</h3>
+    <p>"Power to Change" and "P2C" coexist across our materials with no clear rule about which to use when. Externally, "P2C" requires translation that "Power to Change" does not. We need a simple convention so we stop teaching every audience our shorthand.</p>
+
+    <div class="callout">
+      <p><strong>What this costs us:</strong> Donors and partners who can't describe us to a friend. Ministry teams who default to their own brand because the parent feels abstract. A new generation of Christ-followers who hear nine separate pitches when they could be invited to join one movement. And — quietly — a sense among our own staff that "P2C" is more administrative than missional, when in fact it is the mission.</p>
+    </div>
+  </div>
+
+  <!-- 02 STRATEGIC IDEA -->
+  <div class="section" id="s02">
+    <span class="section-num">02 / The Strategic Idea</span>
+    <h2 class="section-title">One mission, many expressions.</h2>
+    <p>This is the central frame this entire document is built on. Everything that follows — the one-word answer, the one-sentence answer, the website direction, the logo system, the voice — is a translation of this single idea.</p>
+
+    <div class="mission-grid">
+      <div class="mission-cell">
+        <span class="mission-num">1</span>
+        <span class="mission-label">One mission</span>
+        <p class="mission-desc">Helping people know Jesus and experience His power to change the world.</p>
+      </div>
+      <div class="mission-cell">
+        <span class="mission-num">9</span>
+        <span class="mission-label">Nine ministries</span>
+        <p class="mission-desc">Each a distinct expression of that mission, shaped for a different sphere — campuses, families, athletes, leaders, the vulnerable, the digital world, the streets, the marketplace, the world.</p>
+      </div>
+      <div class="mission-cell">
+        <span class="mission-num">1</span>
+        <span class="mission-label">One movement</span>
+        <p class="mission-desc">Nine expressions, one movement — Power to Change.</p>
+      </div>
+    </div>
+
+    <p>This frame replaces "umbrella" with "movement." An umbrella covers. A movement carries. People belong to movements; they only stand under umbrellas.</p>
+    <div class="tagline-block"><p>"We are one mission with nine front doors."</p></div>
+  </div>
+
+  <!-- 03 IDENTITY -->
+  <div class="section" id="s03">
+    <span class="section-num">03 / Identity</span>
+    <h2 class="section-title">Who and what is Power to Change?</h2>
+    <p>Three answers, each shorter than the last. Use the one the moment calls for.</p>
+
+    <h3>The one word.</h3>
+    <span class="feature-word">Movement.</span>
+    <p>"Movement" does work that "organization," "network," "umbrella," and "ministry" cannot. It says we are going somewhere. It says people, not departments. It says we expect to grow, and we expect to be joined. Use it as a noun: <em>"Power to Change is a movement."</em> Use it as a posture: <em>"we move with the Spirit, with the church, and with one another."</em></p>
+
+    <h3>The one sentence.</h3>
+    <div class="one-sentence">
+      <p>Power to Change is a Canadian movement of nine ministries, helping people know Jesus and experience His power to change the world.</p>
+    </div>
+    <p>This is the version a person could say at a dinner table. Twenty-three words. It contains everything: where we are (Canadian), what we are (a movement), how we are organized (nine ministries), and why we exist.</p>
+
+    <h3>The one paragraph.</h3>
+    <div class="one-para">
+      <p>Power to Change is a Canadian movement of nine ministries with one shared mission: <strong>helping people know Jesus and experience His power to change the world.</strong> For 50+ years, our staff and volunteers have shared the gospel, made disciples, and equipped Christ-followers to live on mission across campuses, families, sport, the marketplace, the digital world, and beyond. Today, we are working to ignite ten thousand communities on mission across Canada and the world — until all know Jesus.</p>
+    </div>
+  </div>
+
+  <!-- 04 MESSAGING ARCHITECTURE -->
+  <div class="section" id="s04">
+    <span class="section-num">04 / Messaging Architecture</span>
+    <h2 class="section-title">The words, in order.</h2>
+    <p>A short, repeatable hierarchy. The top of the stack is for everyone. The bottom of the stack is for the room where it makes sense. The discipline is keeping each layer in its lane.</p>
+
+    <div class="layer-stack">
+      <div class="layer">
+        <div class="layer-num">Layer 1</div>
+        <div class="layer-content">
+          <p class="layer-title">Tagline</p>
+          <p class="layer-body"><em>Until all know Jesus.</em></p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-num">Layer 2</div>
+        <div class="layer-content">
+          <p class="layer-title">Mission</p>
+          <p class="layer-body">Helping people know Jesus and experience His power to change the world.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-num">Layer 3</div>
+        <div class="layer-content">
+          <p class="layer-title">Movement Description</p>
+          <p class="layer-body"><em>Power to Change is a Canadian movement of nine ministries, helping people know Jesus and experience His power to change the world.</em></p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-num">Layer 4</div>
+        <div class="layer-content">
+          <p class="layer-title">Vision (internal → external translation)</p>
+          <p class="layer-body">Used when explaining where we are going, not just what we are.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Internal to external translations</h3>
+    <table class="translation-table">
+      <thead>
+        <tr>
+          <th>Internal language</th>
+          <th>External translation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Hub of Evangelism</td><td>A movement that helps the Church share Jesus.</td></tr>
+        <tr><td>10,000 Communities on Mission</td><td>10,000 communities across Canada and beyond, where people are finding Jesus and helping others find Him too.</td></tr>
+        <tr><td>The four C's — Convening, Catalysing, Curating, Connecting</td><td>We bring leaders together, spark new ideas, share what works, and connect Christ-followers to a lifetime of mission.</td></tr>
+        <tr><td>20-mile march</td><td>Steady, faithful progress — every year, in every weather.</td></tr>
+        <tr><td>Three-box thinking</td><td>Honour what is working. Let go of what is not. Build what is next.</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><p>Internal language is shorthand for insiders. It should not be used publicly.</p></div>
+  </div>
+
+  <!-- 05 VOICE AND TONE -->
+  <div class="section" id="s05">
+    <span class="section-num">05 / Voice and Tone</span>
+    <h2 class="section-title">Humble and convicted.</h2>
+    <p>Two words, held together. Drop either one and our voice goes wrong: humble without conviction sounds embarrassed about the gospel; convicted without humility sounds like a sermon at someone. Most Christian organizations default to one or the other. P2C's opportunity is to refuse the trade.</p>
+
+    <table class="voice-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>What it sounds like</th>
+          <th>What it doesn't</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Humble</td>
+          <td>We do not have it all figured out. We learn from the church and seekers.</td>
+          <td>Self-deprecating, apologetic for the gospel, hedging.</td>
+        </tr>
+        <tr>
+          <td>Convicted</td>
+          <td>Jesus is real, He changes lives, we have seen it, we are not embarrassed to say so.</td>
+          <td>Loud, certain about everything, scolding.</td>
+        </tr>
+        <tr>
+          <td>Warm</td>
+          <td>First-person, simple, kind, authentic. Sentences a friend would say.</td>
+          <td>Corporate, distant, polished to the point of soulless.</td>
+        </tr>
+        <tr>
+          <td>Plain</td>
+          <td>Short words when short words will do. One idea per sentence.</td>
+          <td>Jargon, theological insider terms unexplained, marketing speak.</td>
+        </tr>
+        <tr>
+          <td>Active</td>
+          <td>We are doing things. People are doing things. The Spirit is doing things.</td>
+          <td>Passive voice, abstract nouns, hedging verbs.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>The voice test</h3>
+    <p>Before something goes out, read it aloud and ask:</p>
+    <ul style="font-family: var(--font-body); padding-left: 1.5rem; margin: 0.75rem 0 1rem;">
+      <li style="margin-bottom: 0.35rem; line-height: 1.65;">Could a person who is not yet a Christian read this without flinching at the tone?</li>
+      <li style="margin-bottom: 0.35rem; line-height: 1.65;">Could a pastor read this without finding it shallow?</li>
+      <li style="margin-bottom: 0.35rem; line-height: 1.65;">Could a P2C staff member read this and feel it sounds like us?</li>
+    </ul>
+    <p>If any answer is no, rewrite.</p>
+
+    <h3>Two short examples</h3>
+    <div class="ba-grid">
+      <div class="ba-col ba-off">
+        <div class="ba-head">Off-voice</div>
+        <div class="ba-body">P2C is a leading evangelical organization committed to leveraging strategic innovation to maximize Kingdom impact across Canadian society.</div>
+      </div>
+      <div class="ba-col ba-on">
+        <div class="ba-head">On-voice</div>
+        <div class="ba-body">Power to Change is a Canadian movement of nine ministries, helping people know Jesus. We have been at this for fifty years. We are still learning.</div>
+      </div>
+    </div>
+    <div class="ba-grid" style="margin-top: 0.75rem;">
+      <div class="ba-col ba-off">
+        <div class="ba-head">Off-voice</div>
+        <div class="ba-body">Through our Hub of Evangelism, we are catalysing 10,000 Communities on Mission across diverse cultural spheres.</div>
+      </div>
+      <div class="ba-col ba-on">
+        <div class="ba-head">On-voice</div>
+        <div class="ba-body">We are praying for ten thousand communities across Canada — small groups, campuses, teams, neighbourhoods — where people are finding Jesus and helping others find Him too.</div>
+      </div>
+    </div>
+    <div class="ba-grid" style="margin-top: 0.75rem;">
+      <div class="ba-col ba-off">
+        <div class="ba-head">Off-voice</div>
+        <div class="ba-body">Join us in fulfilling the Great Commission through our turnkey resources.</div>
+      </div>
+      <div class="ba-col ba-on">
+        <div class="ba-head">On-voice</div>
+        <div class="ba-body">We would love your help. Pray for us. Give if you can. Share Jesus where you already are — that is the whole point.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 MINISTRY RELATIONSHIP -->
+  <div class="section" id="s06">
+    <span class="section-num">06 / Ministry Relationship</span>
+    <h2 class="section-title">How nine become one — and stay nine.</h2>
+    <p>Each P2C ministry has earned its identity. The strategy is not to flatten the ministries into one visual or verbal style. The strategy is to make their belonging legible.</p>
+
+    <h3>The naming convention</h3>
+    <div class="lockup-box">
+      <p class="lockup-rule">The lockup — always:</p>
+      <p class="lockup-pattern">[Ministry name], a Power to Change ministry.</p>
+      <p class="lockup-examples">FamilyLife Canada, a Power to Change ministry. &nbsp;·&nbsp; DRIME, a Power to Change ministry. &nbsp;·&nbsp; P2C-Students, a Power to Change ministry.</p>
+    </div>
+
+    <h3>Change the words we use</h3>
+    <table class="translation-table">
+      <thead>
+        <tr><th>Instead of Saying</th><th>Start saying</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>FamilyLife Canada is part of P2C's umbrella of ministries.</td><td>FamilyLife Canada is a Power to Change ministry.</td></tr>
+        <tr><td>DRIME is one of our nine sub-brands.</td><td>DRIME is one of nine ministries that make up Power to Change.</td></tr>
+        <tr><td>P2C-Students operates under the P2C parent organization.</td><td>P2C-Students helps students take their next step toward Jesus, as part of the Power to Change movement.</td></tr>
+        <tr><td>Athletes in Action is an independent ministry within P2C.</td><td>Athletes in Action is a Power to Change ministry — one of nine ways we help people know Jesus.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 07 VISUAL IDENTITY -->
+  <div class="section" id="s07">
+    <span class="section-num">07 / Visual Identity</span>
+    <h2 class="section-title">Ministries are unique, yet belong.</h2>
+    <p>Three moves, in order of importance: a logo endorsement system, a tightened colour and type palette, and an image direction. None of this requires a full rebrand of any ministry. It requires a shared signature — small, consistent, present everywhere.</p>
+
+    <h3>Logo endorsement system</h3>
+    <p>Each ministry keeps its primary mark. Beneath it sits a small, consistent Power to Change endorsement. The endorsement is small on purpose — it does not compete with the ministry mark. It just makes belonging visible.</p>
+
+    <div style="background: var(--p2c-cream); border-radius: 12px; padding: 2rem 2rem 1.5rem; margin: 1.5rem 0;">
+
+      <!-- PARENT MARK LABEL -->
+      <p style="font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--p2c-primary); margin-bottom: 1.25rem;">Power to Change — Parent mark</p>
+
+      <!-- P2C PARENT LOGO: cross + p2c letterforms left (scaled down), "Power to Change" wordmark right, "Until all know Jesus" underneath -->
+      <div style="background: #fff; border-radius: 10px; border: 1px solid var(--p2c-gray-xlt); padding: 1.75rem 2.5rem; display: inline-flex; align-items: center; margin-bottom: 2rem;">
+        <svg width="340" height="60" viewBox="0 0 340 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Power to Change full logo mark">
+          <!-- p2c icon group scaled to ~75% of original, centred in 60px height -->
+          <g transform="translate(0,0) scale(0.78)">
+            <!-- Cross bar (horizontal) -->
+            <rect x="0" y="26" width="46" height="10" rx="2" fill="#007FA3"/>
+            <!-- Cross stem (vertical) -->
+            <rect x="15" y="8" width="10" height="52" rx="2" fill="#007FA3"/>
+            <!-- 'p' letterform -->
+            <path d="M46,8 C46,8 78,8 78,28 C78,48 46,48 46,48 L46,72" stroke="#05C3DE" stroke-width="11" fill="none" stroke-linecap="round"/>
+            <!-- '2' letterform -->
+            <path d="M86,14 C86,14 110,10 110,24 C110,36 86,42 84,52 L112,52" stroke="#05A9C7" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- 'c' letterform -->
+            <path d="M150,20 C142,12 118,14 118,36 C118,58 142,60 150,52" stroke="#05C3DE" stroke-width="9" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- Vertical divider — positioned after scaled icon (~155*0.78 = 121px) -->
+          <line x1="132" y1="8" x2="132" y2="52" stroke="#DDE5ED" stroke-width="1.5"/>
+          <!-- "Power to Change" wordmark -->
+          <text x="144" y="26" font-family="Montserrat, sans-serif" font-size="16" font-weight="700" fill="#05A9C7" letter-spacing="0.5">Power to Change</text>
+          <!-- "Until all know Jesus." tagline underneath -->
+          <text x="144" y="44" font-family="Montserrat, sans-serif" font-size="9" font-weight="500" fill="#75787B" letter-spacing="1.2">Until all know Jesus.</text>
+        </svg>
+      </div>
+
+      <!-- MINISTRY MARKS LABEL -->
+      <p style="font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--p2c-primary); margin-bottom: 1.25rem;">Ministry marks with P2C endorsement lockup</p>
+
+      <!-- THREE MINISTRY LOGOS GRID -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+
+        <!-- FAMILYLIFE CANADA -->
+        <!-- Official colours: #52597F (primary navy-purple), #8799C5 (mid), #3F5183 (dark), #D8BAC5 (blush), #F5DBA7 (warm cream) -->
+        <div style="background: #fff; border-radius: 10px; border: 1px solid var(--p2c-gray-xlt); padding: 1.5rem 1rem 1rem; text-align: center;">
+          <svg width="160" height="96" viewBox="0 0 160 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FamilyLife Canada logo concept">
+            <!-- Adult 1 (left) -->
+            <circle cx="52" cy="22" r="9" fill="#52597F"/>
+            <path d="M36,54 C36,36 68,36 68,54 L68,62 L36,62 Z" fill="#52597F"/>
+            <!-- Adult 2 (right) -->
+            <circle cx="108" cy="22" r="9" fill="#3F5183"/>
+            <path d="M92,54 C92,36 124,36 124,54 L124,62 L92,62 Z" fill="#3F5183"/>
+            <!-- Child (centre, smaller, in front) -->
+            <circle cx="80" cy="34" r="7" fill="#8799C5"/>
+            <path d="M67,62 C67,48 93,48 93,62 L93,68 L67,68 Z" fill="#8799C5"/>
+            <!-- Connecting arms - adults holding child's hands -->
+            <line x1="61" y1="48" x2="73" y2="50" stroke="#D8BAC5" stroke-width="3" stroke-linecap="round"/>
+            <line x1="99" y1="48" x2="87" y2="50" stroke="#D8BAC5" stroke-width="3" stroke-linecap="round"/>
+            <!-- Heart above family -->
+            <path d="M80,10 C80,10 74,4 70,7 C66,10 66,16 80,24 C94,16 94,10 90,7 C86,4 80,10 80,10 Z" fill="#D8BAC5"/>
+            <!-- Wordmark -->
+            <text x="80" y="82" font-family="Montserrat, sans-serif" font-size="9" font-weight="700" fill="#3F5183" text-anchor="middle" letter-spacing="0.3">FamilyLife Canada</text>
+          </svg>
+          <!-- P2C Endorsement -->
+          <div style="border-top: 1px solid var(--p2c-gray-xlt); margin-top: 0.6rem; padding-top: 0.6rem; display: flex; align-items: center; justify-content: center; gap: 5px;">
+            <!-- Inline P2C cross+p2c mini mark -->
+            <svg width="18" height="14" viewBox="0 0 180 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="0" y="26" width="46" height="10" rx="2" fill="#007FA3"/>
+              <rect x="15" y="8" width="10" height="52" rx="2" fill="#007FA3"/>
+              <path d="M46,8 C46,8 78,8 78,28 C78,48 46,48 46,48 L46,72" stroke="#05C3DE" stroke-width="11" fill="none" stroke-linecap="round"/>
+              <path d="M86,14 C86,14 110,10 110,24 C110,36 86,42 84,52 L112,52" stroke="#05A9C7" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M150,20 C142,12 118,14 118,36 C118,58 142,60 150,52" stroke="#05C3DE" stroke-width="9" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 7.5px; font-weight: 600; color: #75787B; letter-spacing: 0.05em;">a Power to Change ministry</span>
+          </div>
+        </div>
+
+        <!-- DRIME -->
+        <!-- Official colours: #000000 (black primary), #8AC640 (green), #FAA61A (amber), #FDEF45 (yellow), #EE3778 (pink), #3AACE2 (blue) -->
+        <div style="background: #fff; border-radius: 10px; border: 1px solid var(--p2c-gray-xlt); padding: 1.5rem 1rem 1rem; text-align: center;">
+          <svg width="160" height="96" viewBox="0 0 160 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DRIME logo concept — street drama performers">
+            <!-- Scale down performers to match other ministry marks (~0.75 scale, centred) -->
+            <g transform="translate(20, 8) scale(0.75)">
+              <!-- Stage ground line -->
+              <line x1="20" y1="72" x2="140" y2="72" stroke="#555" stroke-width="1"/>
+              <!-- Performer 1 — arms wide, leaping left -->
+              <circle cx="48" cy="22" r="8" fill="#FAA61A"/>
+              <line x1="48" y1="30" x2="48" y2="56" stroke="#FAA61A" stroke-width="5" stroke-linecap="round"/>
+              <line x1="26" y1="38" x2="70" y2="44" stroke="#FAA61A" stroke-width="4" stroke-linecap="round"/>
+              <line x1="48" y1="56" x2="34" y2="72" stroke="#FAA61A" stroke-width="4" stroke-linecap="round"/>
+              <line x1="48" y1="56" x2="56" y2="72" stroke="#FAA61A" stroke-width="4" stroke-linecap="round"/>
+              <!-- Performer 2 — reaching up right -->
+              <circle cx="112" cy="22" r="8" fill="#EE3778"/>
+              <line x1="112" y1="30" x2="112" y2="56" stroke="#EE3778" stroke-width="5" stroke-linecap="round"/>
+              <line x1="90" y1="44" x2="134" y2="36" stroke="#EE3778" stroke-width="4" stroke-linecap="round"/>
+              <line x1="112" y1="56" x2="100" y2="72" stroke="#EE3778" stroke-width="4" stroke-linecap="round"/>
+              <line x1="112" y1="56" x2="120" y2="72" stroke="#EE3778" stroke-width="4" stroke-linecap="round"/>
+              <!-- Performer 3 — centre, arms raised -->
+              <circle cx="80" cy="16" r="8" fill="#8AC640"/>
+              <line x1="80" y1="24" x2="80" y2="52" stroke="#8AC640" stroke-width="5" stroke-linecap="round"/>
+              <line x1="58" y1="32" x2="102" y2="32" stroke="#8AC640" stroke-width="4" stroke-linecap="round"/>
+              <line x1="80" y1="52" x2="68" y2="72" stroke="#8AC640" stroke-width="4" stroke-linecap="round"/>
+              <line x1="80" y1="52" x2="92" y2="72" stroke="#8AC640" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            <!-- Wordmark in black -->
+            <text x="80" y="88" font-family="Montserrat, sans-serif" font-size="12" font-weight="800" fill="#000000" text-anchor="middle" letter-spacing="3">DRIME</text>
+          </svg>
+          <!-- P2C Endorsement -->
+          <div style="border-top: 1px solid var(--p2c-gray-xlt); margin-top: 0.6rem; padding-top: 0.6rem; display: flex; align-items: center; justify-content: center; gap: 5px;">
+            <svg width="18" height="14" viewBox="0 0 180 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="0" y="26" width="46" height="10" rx="2" fill="#05C3DE"/>
+              <rect x="15" y="8" width="10" height="52" rx="2" fill="#05C3DE"/>
+              <path d="M46,8 C46,8 78,8 78,28 C78,48 46,48 46,48 L46,72" stroke="#05C3DE" stroke-width="11" fill="none" stroke-linecap="round"/>
+              <path d="M86,14 C86,14 110,10 110,24 C110,36 86,42 84,52 L112,52" stroke="#05A9C7" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M150,20 C142,12 118,14 118,36 C118,58 142,60 150,52" stroke="#05C3DE" stroke-width="9" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 7.5px; font-weight: 600; color: #75787B; letter-spacing: 0.05em;">a Power to Change ministry</span>
+          </div>
+        </div>
+
+        <!-- P2C-STUDENTS -->
+        <!-- Official colours: #05C3DE (primary), #007FA3 (dark), #EF5863 (red), #FED900 (yellow), #7EC246 (green) -->
+        <div style="background: #fff; border-radius: 10px; border: 1px solid var(--p2c-gray-xlt); padding: 1.5rem 1rem 1rem; text-align: center;">
+          <svg width="160" height="96" viewBox="0 0 160 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="P2C-Students logo concept — students together">
+            <!-- Student 1 (left) — standing with backpack implied by posture -->
+            <circle cx="36" cy="22" r="9" fill="#EF5863"/>
+            <path d="M22,58 C22,40 50,40 50,58 L50,66 L22,66 Z" fill="#EF5863"/>
+            <!-- Backpack strap detail student 1 -->
+            <rect x="31" y="32" width="5" height="18" rx="2" fill="#c23048"/>
+            <!-- Student 2 (centre, slightly taller — older) -->
+            <circle cx="80" cy="18" r="10" fill="#05C3DE"/>
+            <path d="M64,58 C64,38 96,38 96,58 L96,66 L64,66 Z" fill="#05C3DE"/>
+            <rect x="75" y="28" width="5" height="20" rx="2" fill="#009cb8"/>
+            <!-- Student 3 (right) -->
+            <circle cx="124" cy="22" r="9" fill="#7EC246"/>
+            <path d="M110,58 C110,40 138,40 138,58 L138,66 L110,66 Z" fill="#7EC246"/>
+            <rect x="119" y="32" width="5" height="18" rx="2" fill="#5da030"/>
+            <!-- Speech/idea bubble above centre student -->
+            <ellipse cx="80" cy="6" rx="14" ry="7" fill="#FED900"/>
+            <polygon points="76,11 84,11 80,16" fill="#FED900"/>
+            <text x="80" y="9" font-family="Montserrat, sans-serif" font-size="6" font-weight="800" fill="#007FA3" text-anchor="middle">?!</text>
+            <!-- Connecting line at feet — shared ground -->
+            <line x1="18" y1="66" x2="142" y2="66" stroke="#DDE5ED" stroke-width="1.5"/>
+            <!-- Wordmark -->
+            <text x="80" y="82" font-family="Montserrat, sans-serif" font-size="9" font-weight="700" fill="#007FA3" text-anchor="middle" letter-spacing="0.3">P2C-Students</text>
+          </svg>
+          <!-- P2C Endorsement -->
+          <div style="border-top: 1px solid var(--p2c-gray-xlt); margin-top: 0.6rem; padding-top: 0.6rem; display: flex; align-items: center; justify-content: center; gap: 5px;">
+            <svg width="18" height="14" viewBox="0 0 180 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="0" y="26" width="46" height="10" rx="2" fill="#007FA3"/>
+              <rect x="15" y="8" width="10" height="52" rx="2" fill="#007FA3"/>
+              <path d="M46,8 C46,8 78,8 78,28 C78,48 46,48 46,48 L46,72" stroke="#05C3DE" stroke-width="11" fill="none" stroke-linecap="round"/>
+              <path d="M86,14 C86,14 110,10 110,24 C110,36 86,42 84,52 L112,52" stroke="#05A9C7" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M150,20 C142,12 118,14 118,36 C118,58 142,60 150,52" stroke="#05C3DE" stroke-width="9" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span style="font-family: 'Montserrat', sans-serif; font-size: 7.5px; font-weight: 600; color: #75787B; letter-spacing: 0.05em;">a Power to Change ministry</span>
+          </div>
+        </div>
+
+      </div><!-- end grid -->
+
+      <p style="font-family: var(--font-body); font-size: 0.82rem; font-style: italic; color: var(--p2c-gray); margin: 1.25rem 0 0; line-height: 1.55;">These are illustrative logo concepts designed to encourage brainstorming of ideas. Each ministry uses its official brand colours. The logos are consistent in sizing and use simple concepts of people in different spheres of influence. The P2C cross+p2c mark with a Power to Change Ministry to the right — serves as the consistent endorsement signature across all nine ministries.</p>
+    </div>
+
+    <h3>Endorsement rule</h3>
+    <div class="callout">
+      <p><strong>Primary:</strong> each ministry's unique logo, simply redefined to convey it's target reach.<br>
+      <strong>Endorsement:</strong> the P2C cross+p2c mark + a Power to Change ministry in a single weight, single colour, set at roughly one-third the height of the primary mark.<br>
+      <strong>Position:</strong> directly beneath the primary mark, separated by a thin rule. Or, in horizontal lockups, to the right with a vertical rule between them.<br>
+      <strong>No exceptions</strong> for "special occasions." Clear space and minimum size are defined once, in a single brand kit, used by every ministry.</p>
+    </div>
+
+    <h3>Colour palette</h3>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="swatch-dot" style="background:#05A9C7;"></div><div class="swatch-info"><span class="swatch-name">P2C Primary</span><span class="swatch-hex">#05A9C7</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#05C3DE;"></div><div class="swatch-info"><span class="swatch-name">P2C Light</span><span class="swatch-hex">#05C3DE</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#007FA3;"></div><div class="swatch-info"><span class="swatch-name">P2C Dark</span><span class="swatch-hex">#007FA3</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#008EAA;"></div><div class="swatch-info"><span class="swatch-name">Secondary</span><span class="swatch-hex">#008EAA</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#F19C49;"></div><div class="swatch-info"><span class="swatch-name">Orange</span><span class="swatch-hex">#F19C49</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#E03E52;"></div><div class="swatch-info"><span class="swatch-name">Red</span><span class="swatch-hex">#E03E52</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#00C389;"></div><div class="swatch-info"><span class="swatch-name">Green</span><span class="swatch-hex">#00C389</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#302E2C;"></div><div class="swatch-info"><span class="swatch-name">Ink</span><span class="swatch-hex">#302E2C</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#75787B;"></div><div class="swatch-info"><span class="swatch-name">Gray</span><span class="swatch-hex">#75787B</span></div></div>
+      <div class="swatch"><div class="swatch-dot" style="background:#DDE5ED;"></div><div class="swatch-info"><span class="swatch-name">Light Gray</span><span class="swatch-hex">#DDE5ED</span></div></div>
+    </div>
+    <p style="font-size: 0.9rem;">Every ministry may keep its existing accent colour as a secondary. But every ministry agrees that P2C Teal and P2C Orange are part of its working palette — used at minimum on the endorsement mark and the tagline on every primary surface.</p>
+
+    <h3>Typography</h3>
+    <div class="callout">
+      <p><strong>Montserrat</strong> — headings and titles. Clean, contemporary, wide weight range. Available via Google Fonts.</p>
+      <p style="margin-top:0.5rem;"><strong>Source Serif Pro</strong> — body and paragraphs. Warm, readable, trusted. Pairs with Montserrat to keep us from feeling like a tech company.</p>
+    </div>
+
+    <h3>Imagery direction</h3>
+    <div class="ba-grid">
+      <div class="ba-col ba-on">
+        <div class="ba-head">Use images that are</div>
+        <div class="ba-body">Real people in real moments. Documentary, not catalogue. Visibly Canadian and visibly diverse. Active — people praying, talking, coaching, eating together. Hands and faces. Natural light, soft contrast. The image should feel found, not produced.</div>
+      </div>
+      <div class="ba-col ba-off">
+        <div class="ba-head">Avoid images that are</div>
+        <div class="ba-body">Lone figures looking at sunsets. Cupped hands holding light. Doves. Generic crosses on hilltops. Stock-image diversity. Heavy filters that flatten skin tones. Conference photography as ministry photography.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 08 WEBSITE DIRECTION -->
+  <div class="section" id="s08">
+    <span class="section-num">08 / Website Direction</span>
+    <h2 class="section-title">p2c.com — what to say first.</h2>
+    <p>The home page has roughly four seconds of patience. Use them on the one sentence, the tagline, and one image that proves the words. Everything else can come after.</p>
+
+    <h3>Above the fold — hero copy</h3>
+    <div class="one-sentence" style="background: var(--p2c-primary);">
+      <p style="font-size:1.3rem; font-weight:400;"><strong style="font-family: var(--font-head); font-weight: 800; font-style: normal; font-size:1.5rem; display:block; margin-bottom:0.5rem; color:#fff;">Helping people know Jesus.</strong>Power to Change is a Canadian movement of nine ministries with one shared mission: helping people know Jesus and experience His power to change the world.<br><em style="color: rgba(255,255,255,0.65); font-size:0.95rem;">Until all know Jesus.</em></p>
+    </div>
+
+    <h3>Page structure — in order</h3>
+    <ol style="font-family: var(--font-body); padding-left: 1.5rem; margin: 0.75rem 0 1rem;">
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">Hero — the one sentence + tagline.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">"Nine ministries, one mission." — a clean grid of the nine ministry marks, each with one-line description.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">"What we believe is happening in Canada right now." — a short, honest read of the spiritual moment in plain language.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">"Where it is going." — the 10,000 communities vision, translated externally.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">Stories — three or four real moments from across the ministries with ministry photography.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">Then the numbers — 455,390 heard the gospel, 31,043 made commitments. Numbers come <em>after</em> stories, never before.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">How to take part — Pray. Give. Serve.</li>
+      <li style="margin-bottom: 0.5rem; line-height: 1.65;">Footer — mission, nine ministries listed alphabetically, contact, tagline.</li>
+    </ol>
+
+    <h3>What to remove or quiet</h3>
+    <div class="callout">
+      <p>Replace generic stock imagery. Every "click here" and "learn more" should become the actual thing offered: "Read her story," "See the ministries," "Give monthly."</p>
+    </div>
+  </div>
+
+  <!-- 09 TRANSLATING THE BIG IDEAS -->
+  <div class="section" id="s09">
+    <span class="section-num">09 / Translating the Big Ideas</span>
+    <h2 class="section-title">Hub of Evangelism, simply understood.</h2>
+    <p>The phrase is doing important work internally. It does not survive the journey to a public audience without translation. Three lengths, for three contexts:</p>
+
+    <div class="trans-grid">
+      <div class="trans-card">
+        <div class="trans-card-head">Short — general public</div>
+        <div class="trans-card-body">We help the Church share Jesus.</div>
+      </div>
+      <div class="trans-card">
+        <div class="trans-card-head">Medium — partners and pastors</div>
+        <div class="trans-card-body">Power to Change is becoming a place where Christ-followers, churches, and ministries come together to learn, share what works, and try new things — so more people can hear about Jesus.</div>
+      </div>
+      <div class="trans-card">
+        <div class="trans-card-head">Long — strategy page and donor decks</div>
+        <div class="trans-card-body">Over fifty years of grassroots evangelism, we have learned what helps people meet Jesus and what does not. Now we are turning that experience outward — building a hub where churches and a new generation of Christ-followers can find tools, training, coaching, and partners for sharing the gospel.</div>
+      </div>
+    </div>
+
+    <h3>10,000 communities on mission, translated.</h3>
+    <div class="trans-grid">
+      <div class="trans-card">
+        <div class="trans-card-head">For the home page</div>
+        <div class="trans-card-body">Ten thousand communities across Canada and beyond — small groups, campuses, teams, neighbourhoods — where people are finding Jesus and helping others find Him too.</div>
+      </div>
+      <div class="trans-card">
+        <div class="trans-card-head">For a board deck or grant letter</div>
+        <div class="trans-card-body">Within five years, we are praying that ten thousand distinct communities across Canada and the world will be sharing the gospel where they already live and work. Some of these will be P2C-led. Most will not. That is the point.</div>
+      </div>
+      <div class="trans-card">
+        <div class="trans-card-head">For a thirty-second answer</div>
+        <div class="trans-card-body">Ten thousand groups of Christians — anywhere in Canada — who are sharing Jesus where they already are. That is what we are working toward.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 HARD TRUTHS -->
+  <div class="section" id="s10">
+    <span class="section-num">10 / Hard Truths</span>
+    <h2 class="section-title">Honest places to embrace and review.</h2>
+
+    <div class="truth-grid">
+      <div class="truth-card truth-under">
+        <span class="truth-label">What we are underestimating</span>
+        <ul>
+          <li>The cost of brand fragmentation. Nine ministries with nine voices is more expensive than it looks.</li>
+          <li>How much work "Until all know Jesus" is already doing. We use it as a sign-off when we could use it as a centre of gravity.</li>
+          <li>The next generation's discomfort with the word "evangelism." Lead with stories of changed lives outside the movement, and let the word settle in after.</li>
+          <li>How much our internal language is leaking externally. We are teaching every new visitor our vocabulary instead of speaking theirs.</li>
+        </ul>
+      </div>
+      <div class="truth-card truth-avoid">
+        <span class="truth-label">What Needs Further Consideration</span>
+        <ul>
+          <li>Asking whether "Power to Change" itself is the right name for the moment. The question deserves a real conversation.</li>
+          <li>Whether we are willing to give up credit. The hub strategy succeeds only if the fruit grows on other people's trees.</li>
+          <li>Whether "nine ministries" is permanent. Some will change shape, some will sunset, and new expressions will join.</li>
+          <li>Whether our staff actually share the public version of who we are, or whether they default to the playbook version because it is the only one they have memorized.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11 IF WE GOT THERE -->
+  <div class="section" id="s11">
+    <span class="section-num">11 / If We Got There</span>
+    <h2 class="section-title">What would be true about us.</h2>
+
+    <ul class="arrival-list">
+      <li><span><strong>We would be visible to the broader Canadian Church</strong> — pastors in mid-sized cities would know the name, not just the ministry that visited their campus once.</span></li>
+      <li><span><strong>We would have given up control of the credit.</strong> Most of the ten thousand communities would not be ours. We would tell their stories anyway.</span></li>
+      <li><span><strong>Our nine ministries would feel less like silos.</strong> Staff would speak about "the movement" as easily as they speak about "my ministry."</span></li>
+      <li><span><strong>Our internal language would have settled into its proper room.</strong> Strategy documents would still use "Hub of Evangelism." Public-facing materials would not.</span></li>
+      <li><span><strong>Our funding model would have widened.</strong> More monthly partners, more church partnerships, and a less anxious dependence on a small number of large foundations.</span></li>
+      <li><span><strong>We would be less precious.</strong> Some experiments would have failed publicly and been written about honestly. The voice would feel like ours because we had earned the right to say "we are still learning."</span></li>
+      <li><span><strong>We would still sound like Power to Change.</strong> Nothing in this strategy is meant to replace what is already true and good. The aim is to make it legible.</span></li>
+    </ul>
+  </div>
+
+  <!-- 12 IMPLEMENTATION -->
+  <div class="section" id="s12">
+    <span class="section-num">12 / Implementation</span>
+    <h2 class="section-title">Three phases, no heroics.</h2>
+    <p>This is meant to be done in evenings and Tuesday afternoons, not in a six-month brand sprint. The point is to start doing the right thing in the right order.</p>
+
+    <div class="phase-list">
+      <div class="phase-card">
+        <div class="phase-num">1</div>
+        <div class="phase-body">
+          <p class="phase-time">Days 1–60</p>
+          <p class="phase-title">Words first</p>
+          <ul class="phase-items">
+            <li>Adopt the one-sentence definition as the default movement description. Replace the lead sentence on the home page.</li>
+            <li>Adopt the lockup convention: "[Ministry], a Power to Change ministry." Update email signatures, web footers, and every one-pager.</li>
+            <li>Build the "how we describe ourselves" one-page card for each of the nine ministries. Distribute to staff.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-num">2</div>
+        <div class="phase-body">
+          <p class="phase-time">Days 60–120</p>
+          <p class="phase-title">Visuals next</p>
+          <ul class="phase-items">
+            <li>Lock the colour and typography rules into a single one-page brand kit. Distribute to ministry leads.</li>
+            <li>Design the P2C endorsement lockup in horizontal and stacked formats. Add to every ministry logo file in shared drives.</li>
+            <li>Commission a small photo library — one photographer, three or four ministries, one season of work.</li>
+            <li>Update the website hero. Begin replacing stock photos as the new library comes in.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-num">3</div>
+        <div class="phase-body">
+          <p class="phase-time">Months 4–12</p>
+          <p class="phase-title">Movement next</p>
+          <ul class="phase-items">
+            <li>Roll out the website restructure (sections in order). Test with a small group of partners and pastors before full launch.</li>
+            <li>Build a quarterly story-curation rhythm: one published story per ministry per quarter, told plainly.</li>
+            <li>Run the voice test on every donor letter, video script, and social post for ninety days. Track what slips. Recalibrate.</li>
+            <li>Revisit this document at the one-year mark. Mark what worked, what did not, what changed about the moment. This is a living strategy, not a finished one.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pull-quote">
+      <p>Ultimately, none of this is the work. The work is the gospel. This is the scaffolding around the work, made as honest as we know how to make it.</p>
+    </div>
+  </div>
+
+  <!-- QUICK REFERENCE CARD -->
+  <div class="qr-card" id="qr">
+    <p class="qr-card-title">Appendix — Quick-Reference Card</p>
+    <div class="qr-grid">
+      <div class="qr-item">
+        <p class="qr-item-label">The one word</p>
+        <p class="qr-item-value big">Movement.</p>
+      </div>
+      <div class="qr-item">
+        <p class="qr-item-label">The tagline</p>
+        <p class="qr-item-value" style="font-size:1.2rem; font-weight:600;"><em>Until all know Jesus.</em></p>
+      </div>
+      <div class="qr-item" style="grid-column: 1 / -1;">
+        <p class="qr-item-label">The one sentence</p>
+        <p class="qr-item-value" style="font-size:1.05rem;">Power to Change is a Canadian movement of nine ministries, helping people know Jesus and experience His power to change the world.</p>
+      </div>
+      <div class="qr-item" style="grid-column: 1 / -1;">
+        <p class="qr-item-label">The ministry lockup</p>
+        <p class="qr-item-value">[Ministry name], a Power to Change ministry.</p>
+      </div>
+      <div class="qr-item" style="grid-column: 1 / -1;">
+        <p class="qr-item-label">The voice test — read aloud</p>
+        <p class="qr-item-value">Could a person not yet a Christian read this without flinching at the tone? Could a pastor read this without finding it shallow? Could a P2C staff member read this and feel it sounds like us?</p>
+      </div>
+    </div>
+    <div class="qr-tagline">
+      Power to Change Creative Services &nbsp;·&nbsp; May 2026
+      <strong>Until all know Jesus.</strong>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div style="background: var(--p2c-primary-dk); border-radius: 8px; padding: 1rem 2rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+      <span style="font-family: var(--font-head); font-size: 0.85rem; font-weight: 700; color: #fff;">Gaetanne Hetherington</span>
+      <span style="color: rgba(255,255,255,0.35); font-family: var(--font-head);">·</span>
+      <a href="mailto:gaetanne.hetherington@p2c.com" style="font-family: var(--font-head); font-size: 0.85rem; font-weight: 500; color: var(--p2c-primary-mid); text-decoration: none;">gaetanne.hetherington@p2c.com</a>
+      <span style="color: rgba(255,255,255,0.35); font-family: var(--font-head);">·</span>
+      <span style="font-family: var(--font-head); font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.7);">p2c.com</span>
+    </div>
+    <p>Power to Change &nbsp;·&nbsp; 30439 Great Northern Ave., Abbotsford, BC V2T 0J6</p>
+    <p>Colours from p2c.design/colours &nbsp;·&nbsp; Typography: Montserrat + Source Serif Pro</p>
+    <p class="footer-tagline"><em>Until all know Jesus.</em></p>
+  </div>
+
+</div>
+</body>
+</html>

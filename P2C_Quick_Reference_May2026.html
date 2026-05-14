@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2C Creative Strategy — Quick Reference Card</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2305A9C7'/><rect x='18' y='42' width='30' height='8' rx='2' fill='white'/><rect x='26' y='22' width='8' height='42' rx='2' fill='white'/><path d='M48 22 C48 22 68 22 68 38 C68 54 48 54 48 54 L48 70' stroke='white' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M74 26 C74 26 88 24 88 34 C88 43 74 47 73 55 L89 55' stroke='white' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --p2c-primary:    #05A9C7;
+    --p2c-primary-mid:#05C3DE;
+    --p2c-primary-dk: #007FA3;
+    --p2c-secondary:  #008EAA;
+    --p2c-orange:     #F19C49;
+    --p2c-ink:        #302E2C;
+    --p2c-gray:       #75787B;
+    --p2c-gray-xlt:   #DDE5ED;
+    --p2c-cream:      #F7F9FB;
+    --font-head: 'Montserrat', sans-serif;
+    --font-body: 'Source Serif 4', Georgia, serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; }
+  body {
+    font-family: var(--font-body);
+    color: var(--p2c-ink);
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    background: var(--p2c-primary-dk);
+    border-radius: 16px;
+    padding: 3rem 3rem 2.5rem;
+    max-width: 680px;
+    width: 100%;
+  }
+
+  /* ── HEADER ── */
+  .card-eyebrow {
+    font-family: var(--font-head);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--p2c-primary-mid);
+    margin-bottom: 0.35rem;
+  }
+  .card-title {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  .card-title span { color: var(--p2c-orange); }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    margin: 1.5rem 0;
+  }
+
+  /* ── ITEMS ── */
+  .item { margin-bottom: 1.5rem; }
+  .item:last-of-type { margin-bottom: 0; }
+
+  .item-label {
+    font-family: var(--font-head);
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 0.3rem;
+  }
+
+  .item-value {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.65;
+    font-size: 1rem;
+  }
+
+  .item-value.big {
+    font-family: var(--font-head);
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--p2c-orange);
+    line-height: 1;
+  }
+
+  .item-value.tagline {
+    font-family: var(--font-body);
+    font-size: 1.35rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+  }
+
+  /* ── TWO-COL TOP ── */
+  .top-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 2.5rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── VOICE TEST ── */
+  .voice-list {
+    list-style: none;
+    padding: 0;
+  }
+  .voice-list li {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(255,255,255,0.85);
+    padding: 0.3rem 0 0.3rem 1.1rem;
+    position: relative;
+    line-height: 1.55;
+  }
+  .voice-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--p2c-orange);
+    font-style: normal;
+  }
+
+  /* ── LOCKUP BOX ── */
+  .lockup {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 0.75rem 1.1rem;
+  }
+  .lockup p {
+    font-family: var(--font-head);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+  }
+  .lockup p em {
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(255,255,255,0.65);
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.2rem;
+    font-family: var(--font-body);
+  }
+
+  /* ── FOOTER ── */
+  .card-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .card-footer-left {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.05em;
+  }
+  .card-footer-left a {
+    color: var(--p2c-primary-mid);
+    text-decoration: none;
+  }
+  .card-footer-tagline {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.55);
+  }
+
+  @media (max-width: 500px) {
+    .card { padding: 2rem 1.5rem; }
+    .top-grid { grid-template-columns: 1fr; }
+    .item-value.big { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- P2C LOGO MARK -->
+  <div style="margin-bottom: 1.75rem;">
+    <svg width="160" height="52" viewBox="0 0 320 104" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Power to Change p2c logo mark">
+      <rect x="0" y="37" width="66" height="14" rx="3" fill="rgba(255,255,255,0.5)"/>
+      <rect x="22" y="11" width="14" height="75" rx="3" fill="rgba(255,255,255,0.5)"/>
+      <path d="M66,11 C66,11 112,11 112,40 C112,69 66,69 66,69 L66,104" stroke="rgba(255,255,255,0.85)" stroke-width="15" fill="none" stroke-linecap="round"/>
+      <path d="M123,20 C123,20 158,14 158,34 C158,52 123,60 120,75 L161,75" stroke="rgba(255,255,255,0.75)" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M214,29 C203,17 169,20 169,52 C169,84 203,87 214,75" stroke="rgba(255,255,255,0.85)" stroke-width="13" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <p class="card-eyebrow">P2C Creative Strategy &nbsp;·&nbsp; Quick Reference Card &nbsp;·&nbsp; May 2026</p>
+  <h1 class="card-title">One Mission, <span>Many Expressions.</span></h1>
+
+  <!-- TOP: ONE WORD + TAGLINE side by side -->
+  <div class="top-grid">
+    <div class="item">
+      <p class="item-label">The one word</p>
+      <p class="item-value big">Movement.</p>
+    </div>
+    <div class="item">
+      <p class="item-label">The tagline</p>
+      <p class="item-value tagline"><em>Until all know Jesus.</em></p>
+      <p style="font-family: var(--font-head); font-size: 0.72rem; font-weight: 500; color: rgba(255,255,255,0.4); margin-top: 0.5rem; letter-spacing: 0.05em;">Use it as a seal — end letters, videos, and ministry footers with it.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ONE SENTENCE -->
+  <div class="item">
+    <p class="item-label">The one sentence</p>
+    <p class="item-value">Power to Change is a Canadian movement of nine ministries, helping people know Jesus and experience His power to change the world.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- MINISTRY LOCKUP -->
+  <div class="item">
+    <p class="item-label">The ministry lockup — always</p>
+    <div class="lockup">
+      <p>[Ministry name], a Power to Change ministry.
+        <em>FamilyLife Canada, a Power to Change ministry. &nbsp;·&nbsp; DRIME, a Power to Change ministry. &nbsp;·&nbsp; P2C-Students, a Power to Change ministry.</em>
+      </p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- VOICE TEST -->
+  <div class="item">
+    <p class="item-label">The voice test — read aloud before anything goes out</p>
+    <ul class="voice-list">
+      <li>Could a person not yet a Christian read this without flinching at the tone?</li>
+      <li>Could a pastor read this without finding it shallow?</li>
+      <li>Could a P2C staff member read this and feel it sounds like us?</li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ONE PARAGRAPH -->
+  <div class="item">
+    <p class="item-label">The one paragraph — for grant applications, About pages, and donor decks</p>
+    <p class="item-value">Power to Change is a Canadian movement of nine ministries with one shared mission: helping people know Jesus and experience His power to change the world. For 50+ years, our staff and volunteers have shared the gospel, made disciples, and equipped Christ-followers to live on mission across campuses, families, sport, the marketplace, the digital world, and beyond. Today, we are working to ignite ten thousand communities on mission across Canada and the world — until all know Jesus.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="card-footer">
+    <span class="card-footer-left">
+      Gaetanne Hetherington &nbsp;·&nbsp;
+      <a href="mailto:gaetanne.hetherington@p2c.com">gaetanne.hetherington@p2c.com</a>
+      &nbsp;·&nbsp; p2c.com &nbsp;·&nbsp; May 2026
+    </span>
+    <span class="card-footer-tagline"><em>Until all know Jesus.</em></span>
+  </div>
+
+</div>
+
+</body>
+</html>
